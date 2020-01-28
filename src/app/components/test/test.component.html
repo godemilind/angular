@@ -1,0 +1,25 @@
+<p>test works!</p>
+
+<button (click)='logData()' >Get Heroes</button>
+
+<div *ngFor="let item of myObject | keyvalue">
+    Key: <b>{{item.key}}</b> and Value: <b>{{item.value}}</b>
+</div>
+
+
+<table class="table table-dark table-hover table-striped table-bordered table-condensed">
+    <thead class="thead-light">
+      <tr class="success">
+        <th>Name</th>
+        <th>Age</th>        
+        <th>Email</th>  
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success" *ngFor="let student of students">
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.email}}</td>
+      </tr>
+    </tbody>
+  </table>
